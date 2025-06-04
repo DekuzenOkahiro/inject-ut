@@ -11,17 +11,3 @@ def request(flow: http.HTTPFlow):
             }),
             {"Content-Type": "application/json"}
         )
-    elif "/apiv4r11/users" in flow.request.path:
-        fake_users = [
-            {
-                "id": 1921438,
-                "username": "dinda1",
-                "email": "dinda@kuala.shop",
-                "avatar": "https://vntool.vn/media/default.png"
-            }
-        ]
-        flow.response = http.Response.make(
-            200,
-            json.dumps(fake_users),
-            {"Content-Type": "application/json"}
-        )
