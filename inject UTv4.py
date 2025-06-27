@@ -14,9 +14,9 @@ def request(flow: http.HTTPFlow):
     elif "/apiv4r11/users" in flow.request.path:
         fake_users = [
             {
-                "id": 1921438,
-                "username": "dinda1",
-                "email": "dinda@kuala.shop",
+                "id": 2340833,
+                "username": "kao0",
+                "email": "sunday@oprekyuk.com",
                 "avatar": "https://vntool.vn/media/default.png"
             }
         ]
